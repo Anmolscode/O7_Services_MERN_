@@ -1,78 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <fieldset>
-        <h1><center>O7 Services</center></h1>
-    </fieldset>
-    <table>
-        <tr>
-            <td>
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <label for="fname">First Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" placeholder="Enter Your Name" id="fname"><br><br><br><br><br>
-                    <label for="lname">Last Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" placeholder="Enter Your last Name" id="lname"><br><br><br><br>                   <label for="email">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="email" placeholder="Enter Your email" id="email"><br><br><br><br><br>
-                    <label for=password">Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="password" placeholder="Enter Your password" id="password"><br><br><br><br><br>
-                    <label for="number">Contact Number :</label>
-                    <input type="number" placeholder="Enter Your contact number" id="number"><br><br><br><br><br>
-                    <label for="city">City :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text"placeholder="Entry city" id="city">
-                </fieldset>
-            </td>
-            <td>
-                <fieldset>
-                    <legend>Other Information</legend>
-                    <label for="D.O.B">D.O.B :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="date"><br><br><br><br><br>
-                    <label for="gender">Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    male<input type="radio" name="gender" id="gender">
-                    female<input type="radio" name="gender" id="gender"><br><br><br><br><br>
-                    <label for="">Technology :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <select name="" id="">
-                        <option value="">SELECT</option>
-                        <option value="">option-1</option>
-                    </select><br><br><br><br><br>
-                    <label for="">Course :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" placeholder="Enter Course"><br><br><br><br><br>
-                    <label for="">Image :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="file"><br><br><br><br><br>
-                    <input type="checkbox">T&C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I have read all the term and conditions
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container bg-grey ">
+        <div class="row text-white">
+            <div class="col-md-12">
+                <h1 class="text-center" >Register</h1>
+                <p class="text-center">Please Register If You Want Accessour Website</p>
+                <hr class="mx-auto" width="400px">
+            </div>
+        </div>
 
-                </fieldset>
-            </td>
-            <td rowspan="2">
-                <fieldset>
-                    <legend>Youtube Channel</legend>
-                    <iframe src="https://youtu.be/cw6p3BL05Ng" frameborder="0"></iframe><br><br>
-                    <iframe src="https://youtu.be/cw6p3BL05Ng" frameborder="0"></iframe><br><br>
-                    <iframe src="https://youtu.be/cw6p3BL05Ng" frameborder="0"></iframe><br><br><br><br><br><br><br>
-                    <a href="https://www.google.com">google</a><br><br>
-                    <a href="https://www.google.com">Subscribe my channel</a><br>
-                </fieldset>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <fieldset>
-                    <label for="query">Ask your query here we will contact you</label>
-                    <textarea name="" id="query" cols="30" rows="10"></textarea>
-                </fieldset>
-            </td>
-        </tr>
-    </table>
+    
 
-    <footer>
-        <fieldset>
-            <center>&copy; O7 Services</center>
-        </fieldset>
-    </footer>
-</body>
+            <div class="row text-white">
+                <div class="col-md-6">
+                <label for="" class="pb-2 pt-3">First Name</label><br>
+                <input class="form-control rounded-pill" type="text">
+            </div>
+            <div class="col-md-6">
+                <label for="" class="pb-2 pt-3">Last Name</label><br>
+                <input class="form-control rounded-pill" type="text">
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-12">
+                <label for="" class="pb-4 pt-3">Username</label>
+                <input class="form-control rounded-pill" type="text">
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-12">
+                <label for="" class="pb-4 pt-3">Email</label>
+                <input class="form-control rounded-pill" type="email">
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-12">
+                <label for="" class="pb-4 pt-3">Phone Number</label>
+                <input class="form-control rounded-pill" placeholder="Enter Phone Number" type="number">
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-3">
+                <label for="" class="pb-2 pt-3">city</label>
+                <input class="form-control rounded-pill" type="text">
+            </div>
+            <div class="col-md-6">
+                <label for="" class="pb-2 pt-3">State</label>
+                <select name="" id="" class="form-control rounded-pill">
+                    <option value="" selected disabled> choose</option>
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="" class="pb-2 pt-3">zip</label>
+                <input class="form-control rounded-pill" type="file">
+            </div>
+        </div>
+        
+        <div class="row text-white">
+            <div class="col-md-12">
+                <label for="" class="pb-4 pt-3">Password</label>
+                <input class="form-control rounded-pill" placeholder="password" type="password">
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-12">
+                <label for="" class="pb-4 pt-3"> Confirm-Password</label>
+                <input class="form-control rounded-pill" placeholder="password" type="password">
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-12 pt-3">
+                <input type="checkbox" class="rounded-pill" > Agree to terms and conditions
+            </div>
+        </div>
+        
+    
+
+
+        <div class="row">
+            <div class="col-md">
+               <button  class="mx-auto d-block btn btn-light" type="submit">Register</button>
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <p class="text-center">  Already have an account?  <a href="">login</a></p>
+           
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
