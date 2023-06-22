@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mathematical TABLE WITH JAVASCRIPT </h1>
+
+    Enter any number :
+    <input type="number" id="number"><br><br>
+
+    Enter start number:
+    <input type="number" id="start"><br><br>
+
+    Enter end number :
+    <input type="number" id="end"><br><br>
+
+
+    <button onclick="loop()">Generate</button>
+    
+    <h1 id="result"></h1>   
+    
+    <script>
+        function loop(){
+            var no = document.getElementById("number").value;
+            var starter = document.getElementById("start").value;
+            var ender = document.getElementById("end").value;
+            
+            document.getElementById("result").innerHTML = ""
+
+
+            for(i=starter; i<=ender ; i++)
+            {
+                result = i * no ;
+            // document.getElementById("result").innerHTML *= "result = i*no"
+            console.log(result)
+            }
+        }
+
+    </script>
+</body>
+</html>
