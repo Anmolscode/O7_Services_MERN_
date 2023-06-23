@@ -1,111 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container bg-grey ">
-        <div class="row text-white">
-            <div class="col-md-12">
-                <h1 class="text-center" >Register</h1>
-                <p class="text-center">Please Register If You Want Accessour Website</p>
-                <hr class="mx-auto" width="400px">
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Any Number <input type="number" id="num"><br>
+    Enter width <input type="text" id="width"><br>
+    Enter height <input type="text" id="height"><br>
+    Enter Color <input type="color" id="color"><br>
+    <button onclick="cal()">Submit</button>
+    <p id="result"></p>
+    <script>
+        function cal(){
+            //get Value
+            var n = document.getElementById("num").value;
+            var w = document.getElementById("width").value;
+            var h = document.getElementById("height").value;
+            var color = document.getElementById("color").value;
 
-    
-
-            <div class="row text-white">
-                <div class="col-md-6">
-                <label for="" class="pb-2 pt-3">First Name</label><br>
-                <input class="form-control rounded-pill" type="text">
-            </div>
-            <div class="col-md-6">
-                <label for="" class="pb-2 pt-3">Last Name</label><br>
-                <input class="form-control rounded-pill" type="text">
-            </div>
-        </div>
-
-        <div class="row text-white">
-            <div class="col-md-12">
-                <label for="" class="pb-4 pt-3">Username</label>
-                <input class="form-control rounded-pill" type="text">
-            </div>
-        </div>
-
-        <div class="row text-white">
-            <div class="col-md-12">
-                <label for="" class="pb-4 pt-3">Email</label>
-                <input class="form-control rounded-pill" type="email">
-            </div>
-        </div>
-
-        <div class="row text-white">
-            <div class="col-md-12">
-                <label for="" class="pb-4 pt-3">Phone Number</label>
-                <input class="form-control rounded-pill" placeholder="Enter Phone Number" type="number">
-            </div>
-        </div>
-
-        <div class="row text-white">
-            <div class="col-md-3">
-                <label for="" class="pb-2 pt-3">city</label>
-                <input class="form-control rounded-pill" type="text">
-            </div>
-            <div class="col-md-6">
-                <label for="" class="pb-2 pt-3">State</label>
-                <select name="" id="" class="form-control rounded-pill">
-                    <option value="" selected disabled> choose</option>
-                    <option value="1">1</option>
-                    <option value="1">2</option>
-                    <option value="1">3</option>
-                </select>
-            </div>
-            <div class="col-md-3">
-                <label for="" class="pb-2 pt-3">zip</label>
-                <input class="form-control rounded-pill" type="file">
-            </div>
-        </div>
-        
-        <div class="row text-white">
-            <div class="col-md-12">
-                <label for="" class="pb-4 pt-3">Password</label>
-                <input class="form-control rounded-pill" placeholder="password" type="password">
-            </div>
-        </div>
-
-        <div class="row text-white">
-            <div class="col-md-12">
-                <label for="" class="pb-4 pt-3"> Confirm-Password</label>
-                <input class="form-control rounded-pill" placeholder="password" type="password">
-            </div>
-        </div>
-
-        <div class="row text-white">
-            <div class="col-md-12 pt-3">
-                <input type="checkbox" class="rounded-pill" > Agree to terms and conditions
-            </div>
-        </div>
-        
-    
-
-
-        <div class="row">
-            <div class="col-md">
-               <button  class="mx-auto d-block btn btn-light" type="submit">Register</button>
-            </div>
-        </div>
-
-        <div class="row text-white">
-            <p class="text-center">  Already have an account?  <a href="">login</a></p>
-           
-        </div>
-        
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+            document.getElementById("result").innerHTML = ""
+            
+            for(i=1;i<=n;i++)
+            {
+                document.getElementById("result").innerHTML += "<div style='width:"+w+";height:"+h+";background:"+color+";margin:10px;float:left'></div><br>"
+            }
+        }
+    </script>
+</body>
 </html>
