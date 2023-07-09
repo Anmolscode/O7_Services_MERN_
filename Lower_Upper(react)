@@ -1,0 +1,32 @@
+import React , {useState} from 'react'
+
+export default function Header() {
+    
+    const UpCase =() =>{
+        console.log(text)
+        let newText= text.toUpperCase();
+        setText(newText)
+    }
+    const LOCase =() =>{
+        console.log(text)
+        let newText= text.toLowerCase();
+        setText(newText)
+    }
+
+    const handleOnChange = (event) =>{
+        console.log("On Change");
+        setText(event.target.value)
+    }
+    const [text , setText] = useState('Enter Text Here');
+
+  return (
+        <>
+        <div className=" my-5">
+                     
+            <textarea className="form-control" value={text} onChange={handleOnChange} name="" id="UppCase" rows="8"></textarea>
+            <button className="btn btn-primary  mt-4 mx-3 " type="submit" onClick={UpCase}>UpperCase</button>
+            <button className="btn btn-primary mt-4  " type="submit" onClick={LOCase}>LowerCase</button>
+        </div> 
+        </>
+  )
+}
